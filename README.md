@@ -87,7 +87,13 @@ npm install
 
 ---
 
-Run Locally
+## ▶️ Run Locally
+
+```bash
 npm run dev
 
 Open: http://localhost:3000
+
+---
+
+### ⚙️ Other Commands

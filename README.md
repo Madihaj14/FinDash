@@ -13,9 +13,9 @@ Track financial data, visualize insights, and manage transactions through an int
 ## 📸 Screenshots
 
 
-![Dashboard](./public/dashboard.png)
-![Transactions](./public/transactions.png)
-![Insights](./public/insights.png)
+![Dashboard](./public/Dashboard.png)
+![Transactions](./public/Transactions.png)
+![Insights](./public/Insights.png)
 
 
 ---

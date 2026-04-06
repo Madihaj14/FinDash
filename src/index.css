@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* #F8F7FC → hsl(252, 33%, 98%) */
+    --background: 252 33% 98%;
+    /* #1F2937 */
+    --foreground: 215 28% 17%;
+
+    /* #FFFFFF */
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    /* #7C5CFC → hsl(253, 97%, 68%) */
+    --primary: 253 97% 68%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft lavender secondary */
+    --secondary: 252 30% 94%;
+    --secondary-foreground: 253 40% 35%;
+
+    --muted: 252 25% 95%;
+    /* #6B7280 */
+    --muted-foreground: 220 9% 46%;
+
+    /* #F472B6 → hsl(330, 86%, 70%) */
+    --accent: 330 86% 70%;
+    --accent-foreground: 330 60% 20%;
+
+    /* #FB7185 → hsl(351, 95%, 72%) */
+    --destructive: 351 95% 72%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* #22C55E → hsl(142, 71%, 45%) */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* rgba(124, 92, 252, 0.08) */
+    --border: 253 50% 90%;
+    --input: 253 30% 90%;
+    --ring: 253 97% 68%;
+
+    --radius: 0.875rem;
+
+    /* Chart colors — category palette */
+    --chart-1: 253 97% 68%;
+    --chart-2: 263 70% 72%;
+    --chart-3: 330 86% 70%;
+    --chart-4: 351 95% 72%;
+    --chart-5: 199 89% 60%;
+    --chart-6: 160 64% 52%;
+    --chart-7: 45 93% 56%;
+    --chart-8: 270 67% 72%;
+
+    --sidebar-background: 252 33% 97%;
+    --sidebar-foreground: 215 28% 17%;
+    --sidebar-primary: 253 97% 68%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 252 30% 94%;
+    --sidebar-accent-foreground: 215 28% 17%;
+    --sidebar-border: 253 50% 90%;
+    --sidebar-ring: 253 97% 68%;
+
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  .dark {
+    /* #0F0F1A → hsl(240, 29% 8%) */
+    --background: 240 29% 8%;
+    /* #E5E7EB */
+    --foreground: 216 12% 91%;
+
+    /* #1A1A2E → hsl(240, 29% 14%) */
+    --card: 240 29% 14%;
+    --card-foreground: 216 12% 91%;
+
+    --popover: 240 29% 14%;
+    --popover-foreground: 216 12% 91%;
+
+    /* #A78BFA → hsl(258, 90% 76%) */
+    --primary: 258 90% 76%;
+    --primary-foreground: 240 29% 8%;
+
+    --secondary: 240 20% 20%;
+    --secondary-foreground: 258 60% 85%;
+
+    --muted: 240 20% 18%;
+    /* #9CA3AF */
+    --muted-foreground: 218 11% 65%;
+
+    --accent: 330 86% 70%;
+    --accent-foreground: 330 86% 95%;
+
+    --destructive: 351 95% 72%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* #34D399 → hsl(160, 64% 52%) */
+    --success: 160 64% 52%;
+    --success-foreground: 0 0% 100%;
+
+    /* rgba(255, 255, 255, 0.08) → subtle border */
+    --border: 240 10% 20%;
+    --input: 240 15% 20%;
+    --ring: 258 90% 76%;
+
+    --chart-1: 258 90% 76%;
+    --chart-2: 263 70% 72%;
+    --chart-3: 330 86% 70%;
+    --chart-4: 351 95% 72%;
+    --chart-5: 199 89% 60%;
+    --chart-6: 160 64% 52%;
+    --chart-7: 45 93% 56%;
+    --chart-8: 270 67% 72%;
+
+    --sidebar-background: 240 29% 10%;
+    --sidebar-foreground: 216 12% 91%;
+    --sidebar-primary: 258 90% 76%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 20% 18%;
+    --sidebar-accent-foreground: 216 12% 91%;
+    --sidebar-border: 240 10% 20%;
+    --sidebar-ring: 258 90% 76%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-2xl border border-border/60 shadow-sm;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .dark .glass-card {
+    background: rgba(26, 26, 46, 0.6);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .header-glass {
+    background: rgba(248, 247, 252, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .dark .header-glass {
+    background: rgba(15, 15, 26, 0.8);
+  }
+}

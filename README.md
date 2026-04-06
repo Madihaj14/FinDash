@@ -144,19 +144,18 @@ findash/
 ---
 
 ### 🧠 What I Would Add With More Time
-    🔐 Authentication (Login / Signup with JWT or OAuth)
-    ☁️ Backend integration (Node.js / Firebase / Supabase)
-    📊 Advanced analytics and AI-based insights
-    💰 Budget planning and savings goals
-    🔔 Smart notifications and alerts
-    📁 Export data (CSV / PDF reports)
-    🌍 Multi-currency support with live exchange rates
-    🔄 Recurring transactions and bill reminders
-    🧾 Full CRUD functionality for transactions
-    📱 Progressive Web App (PWA) support
-    🌙 Dark mode toggle
-    📈 Advanced filtering and richer charts
-
+🔐 Authentication (Login / Signup with JWT or OAuth)
+☁️ Backend integration (Node.js / Firebase / Supabase)
+📊 Advanced analytics and AI-based insights
+💰 Budget planning and savings goals
+🔔 Smart notifications and alerts
+📁 Export data (CSV / PDF reports)
+🌍 Multi-currency support with live exchange rates
+🔄 Recurring transactions and bill reminders
+🧾 Full CRUD functionality for transactions
+📱 Progressive Web App (PWA) support
+🌙 Dark mode toggle
+📈 Advanced filtering and richer charts
 --- 
 
 ### 💡 Final Note

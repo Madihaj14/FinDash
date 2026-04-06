@@ -116,8 +116,9 @@ npm run lint
 
 --- 
 
-📂 Project Structure
+### 📂 Project Structure
 
+```bash 
 findash/
 ├── public/
 ├── src/
@@ -130,6 +131,7 @@ findash/
 ├── package.json
 ├── tailwind.config.js
 └── tsconfig.json
+```
 
 ---
 

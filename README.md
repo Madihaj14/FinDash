@@ -85,6 +85,8 @@ cd findash
 # 3. Install dependencies
 npm install
 
+```
+
 ---
 
 ## ▶️ Run Locally
@@ -92,8 +94,71 @@ npm install
 ```bash
 npm run dev
 
+```
+
 Open: http://localhost:3000
 
 ---
 
 ### ⚙️ Other Commands
+
+```bash
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run linter
+npm run lint
+
+```
+
+--- 
+
+📂 Project Structure
+
+findash/
+├── public/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── hooks/
+│   ├── utils/
+│   ├── styles/
+│   └── types/
+├── package.json
+├── tailwind.config.js
+└── tsconfig.json
+
+---
+
+### ⚡ Architecture Decisions
+- Used Next.js App Router for scalable routing
+- Followed component-based architecture for better reusability
+- Used Tailwind CSS for fast and consistent UI development
+- Built as a frontend-focused project without backend dependency
+
+---
+
+### 🧠 What I Would Add With More Time
+    🔐 Authentication (Login / Signup with JWT or OAuth)
+    ☁️ Backend integration (Node.js / Firebase / Supabase)
+    📊 Advanced analytics and AI-based insights
+    💰 Budget planning and savings goals
+    🔔 Smart notifications and alerts
+    📁 Export data (CSV / PDF reports)
+    🌍 Multi-currency support with live exchange rates
+    🔄 Recurring transactions and bill reminders
+    🧾 Full CRUD functionality for transactions
+    📱 Progressive Web App (PWA) support
+    🌙 Dark mode toggle
+    📈 Advanced filtering and richer charts
+
+--- 
+
+### 💡 Final Note
+
+This project focuses on building a clean, scalable frontend architecture for a finance dashboard, showcasing strong fundamentals in UI development, responsiveness, and component design.
+
+---
